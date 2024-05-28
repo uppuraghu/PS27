@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1)rows=+prompt("enter no of rows")
+for(i=1;i<=rows;i++){
+ s=" "
+    ele=i+rows-1;
+    for(j=1;j<=i;j++)
+    {
+        if(j==1){
+            s=s+i+" "
+        }
+        else{
+            s=s+ele+" "
+            ele=ele+rows-j
+        }
+    }
+    console.log(s)
+}
+
+
+
+
+2)rows = +prompt("Enter no of rows: ") 
+value=1//5
+for(i=1;i<=rows;i++){
+    s=""
+    for(j=1;j<=rows;j++){
+        if(i+j==rows+1 || i==j){
+            s=s+j+" "
+        }
+        else{
+            s=s+" "
+        }
+    }
+    console.log(s)
+}
+</body>
+</html>
